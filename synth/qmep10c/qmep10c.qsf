@@ -1,0 +1,168 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# Date created = 15:48:37  March 23, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		qmep10c_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone 10 LP"
+set_global_assignment -name DEVICE 10CL016YU484C8G
+set_global_assignment -name TOP_LEVEL_ENTITY qmep10c_top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:48:37  MARCH 23, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+
+
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name VHDL_FILE ../../src/hdmi2/serializer_generic.vhd
+set_global_assignment -name VHDL_FILE ../../src/hdmi2/hdmidelay.vhd
+set_global_assignment -name VERILOG_FILE ../../src/hdmi2/hdmidataencoder.v
+set_global_assignment -name VHDL_FILE ../../src/hdmi2/hdmi_out_altera.vhd
+set_global_assignment -name VHDL_FILE ../../src/hdmi2/hdmi.vhd
+set_global_assignment -name VHDL_FILE ../../src/hdmi2/encoder.vhd
+set_global_assignment -name VHDL_FILE ../../src/hdmi2/altddio_out1.vhd
+set_global_assignment -name QIP_FILE ../../src/hdmi2/altddio_out1.qip
+set_global_assignment -name VHDL_FILE ../../src/audio/dac_dsm2v.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/dac.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/mixeru.vhd
+set_global_assignment -name VHDL_FILE "../../src/syn-qmep10c/qmep10c_top.vhd"
+set_global_assignment -name QIP_FILE "../../src/syn-qmep10c/pll1.qip"
+set_global_assignment -name VHDL_FILE ../../src/audio/i2s_transmitter.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/i2s_intf.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/mixers.vhd
+set_global_assignment -name VHDL_FILE ../../src/peripheral/memoryctl.vhd
+set_global_assignment -name VHDL_FILE ../../src/peripheral/escci/scc_wave.vhd
+set_global_assignment -name VHDL_FILE ../../src/peripheral/escci/escci.vhd
+set_global_assignment -name VHDL_FILE ../../src/shared/seg7.vhd
+set_global_assignment -name VHDL_FILE ../../src/shared/fifo.vhd
+set_global_assignment -name VHDL_FILE ../../src/shared/debounce.vhd
+set_global_assignment -name VHDL_FILE ../../src/peripheral/romnextor.vhd
+set_global_assignment -name VHDL_FILE ../../src/peripheral/swioports.vhd
+set_global_assignment -name VHDL_FILE ../../src/peripheral/exp_slot.vhd
+set_global_assignment -name VHDL_FILE ../../src/peripheral/pio.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/YM2149.vhd
+set_global_assignment -name VHDL_FILE ../../src/ram/dpram.vhd
+set_global_assignment -name VHDL_FILE ../../src/video/vga.vhd
+set_global_assignment -name VHDL_FILE ../../src/video/framebuffer.vhd
+set_global_assignment -name VHDL_FILE ../../src/video/dblscan.vhd
+set_global_assignment -name VHDL_FILE ../../src/video/vdp18/vdp18_sprite.vhd
+set_global_assignment -name VHDL_FILE ../../src/video/vdp18/vdp18_pattern.vhd
+set_global_assignment -name VHDL_FILE ../../src/video/vdp18/vdp18_palette.vhd
+set_global_assignment -name VHDL_FILE ../../src/video/vdp18/vdp18_paletas_3bit_pack.vhd
+set_global_assignment -name VHDL_FILE "../../src/video/vdp18/vdp18_pack-p.vhd"
+set_global_assignment -name VHDL_FILE ../../src/video/vdp18/vdp18_hor_vert.vhd
+set_global_assignment -name VHDL_FILE ../../src/video/vdp18/vdp18_ctrl.vhd
+set_global_assignment -name VHDL_FILE ../../src/video/vdp18/vdp18_cpuio.vhd
+set_global_assignment -name VHDL_FILE ../../src/video/vdp18/vdp18_core.vhd
+set_global_assignment -name VHDL_FILE ../../src/video/vdp18/vdp18_col_mux.vhd
+set_global_assignment -name VHDL_FILE ../../src/video/vdp18/vdp18_clk_gen.vhd
+set_global_assignment -name VHDL_FILE ../../src/video/vdp18/vdp18_addr_mux.vhd
+set_global_assignment -name VHDL_FILE ../../src/rom/mainrom.vhd
+set_global_assignment -name VHDL_FILE ../../src/rom/ipl_rom.vhd
+set_global_assignment -name VHDL_FILE ../../src/cpu/t80a.vhd
+set_global_assignment -name VHDL_FILE ../../src/cpu/t80_reg.vhd
+set_global_assignment -name VHDL_FILE ../../src/cpu/t80_pack.vhd
+set_global_assignment -name VHDL_FILE ../../src/cpu/t80_mcode.vhd
+set_global_assignment -name VHDL_FILE ../../src/cpu/t80_alu.vhd
+set_global_assignment -name VHDL_FILE ../../src/cpu/t80.vhd
+set_global_assignment -name VHDL_FILE ../../src/peripheral/midiIntf.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/voicerom.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/voicememory.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/vm2413.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/temporalmixer.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/SumMixer.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/slotcounter.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/sinetable.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/registermemory.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/phasememory.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/phasegenerator.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/outputmemory.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/outputgenerator.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/opll.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/operator.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/LinearTableMul.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/lineartable.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/InterpolateMul.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/feedbackmemory.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/envelopememory.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/envelopegenerator.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/controller.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/AttackTableMul.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/vm2413/attacktable.vhd
+set_global_assignment -name VHDL_FILE ../../src/audio/jt51/jt51_wrapper.vhd
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_timers.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_sh.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_reg.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_pm.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_phrom.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_phinc_rom.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_pg.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_op.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_noise_lfsr.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_noise.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_mod.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_mmr.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_lin2exp.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_lfo_lfsr.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_lfo.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_kon.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_exprom.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_exp2lin.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_eg.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51_acc.v
+set_global_assignment -name VERILOG_FILE ../../src/audio/jt51/jt51.v
+set_global_assignment -name VHDL_FILE ../../src/peripheral/ps2_iobase.vhd
+set_global_assignment -name VHDL_FILE ../../src/peripheral/spi.vhd
+set_global_assignment -name VHDL_FILE ../../src/peripheral/keymap.vhd
+set_global_assignment -name VHDL_FILE ../../src/peripheral/keyboard.vhd
+set_global_assignment -name VHDL_FILE ../../src/ram/spram.vhd
+set_global_assignment -name VHDL_FILE ../../src/ram/ssdram256Mb.vhd
+set_global_assignment -name VHDL_FILE ../../src/ram/ssdram.vhd
+set_global_assignment -name VHDL_FILE ../../src/msx_pack.vhd
+set_global_assignment -name VHDL_FILE ../../src/msx.vhd
+set_global_assignment -name VHDL_FILE ../../src/clocks.vhd
+set_global_assignment -name QIP_FILE "../../src/syn-qmep10c/pll2.qip"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
